@@ -20,9 +20,20 @@ header {
 .container {
   margin: 50px;
 }
-.mid-section img {
-  height: 500px;
-  width: 500px;
-  float: right;
-  overflow: hidden;
+.mid-screen {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.mid-screen img {
+  position: relative;
+  max-width: 100%;
+}
+
+.right-mid-screen {
+  position: absolute;
+}
+
+.left-mid-screen {
+  position: absolute;
 }
