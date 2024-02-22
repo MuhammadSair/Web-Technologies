@@ -68,6 +68,7 @@ h5 {
   height: 200px;
   box-shadow: 0 10px 10px grey;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .imgBox {
   position: relative;
@@ -102,6 +103,7 @@ h5 {
   position: absolute;
   color: white;
   font-size: large;
+  overflow: hidden;
 }
 .personalInfo img {
   height: 20px;
@@ -138,10 +140,11 @@ h5 {
   margin-bottom: 10px;
 }
 .courses {
-  /* position: absolute; */
+  /* position: relative; */
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 20px;
+  overflow: hidden;
 }
 
 .courses-list::before {
