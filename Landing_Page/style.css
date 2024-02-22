@@ -20,20 +20,23 @@ header {
 .container {
   margin: 50px;
 }
-.mid-screen {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-}
-
-.mid-screen img {
+.mid-section {
   position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 10em;
+}
+.mid-right img {
   max-width: 100%;
 }
-
-.right-mid-screen {
-  position: absolute;
+.mid-section h1,
+p {
+  margin-bottom: 1em;
 }
-
-.left-mid-screen {
+.mid-section button {
   position: absolute;
+  width: 12em;
+  height: 3em;
+  left: 300px;
+  background-color: lightblue;
 }
