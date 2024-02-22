@@ -40,3 +40,17 @@ p {
   left: 300px;
   background-color: lightblue;
 }
+.bottom-section {
+  background-image: url("images/illustration-2.svg");
+  text-align: left;
+  /* width: 50%; */
+  /* height: 10rem; */
+}
+.bottom-section p {
+  width: 40%;
+  margin-bottom: 1em;
+}
+.bottom-section h1 {
+  width: 50%;
+  margin-bottom: 1em;
+}
