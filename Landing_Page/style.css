@@ -76,27 +76,58 @@ p {
   margin-bottom: 1em;
 }
 .productive_box {
-  background-color: #fff;
+  position: relative;
+  color: white;
   margin-top: 3rem;
-  margin: 30px;
+  /* margin: 5e`m; */
   border-radius: 10px;
   box-shadow: 0 10px 10px grey;
   justify-content: left;
+  border-color: black;
+  height: 15em;
+  width: 20em;
+  padding: 2em;
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+  /* overflow: auto; */
 }
+.productive_box p {
+  color: black;
+}
+
 .img-box {
   position: absolute;
+  display: inline-block;
+  top: 10em;
+  left: 10px;
+  bottom: 10px;
+
   border-radius: 50%;
   border-color: green;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   background-image: url("images/avatar-testimonial.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+}
+.flex_profile b {
+  position: relative;
+  color: black;
+  float: right;
+}
+.flex_profile span {
+  position: relative;
+  left: 4em;
+  color: black;
+  float: right;
+}
+.flex_profile {
+  display: flex;
+  align-items: center;
 }
 /* .img-box img {
-  object-fit: cover;
+  object-fit: contain;
 } */
 .productive_box p {
   width: 100%;
