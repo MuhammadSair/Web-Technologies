@@ -5,6 +5,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  color: ;
 }
 header {
   margin-bottom: 50px;
@@ -181,10 +182,30 @@ p {
 }
 .section4_container {
   display: grid;
-  grid-template-columns: 50% 50% 50% 50%;
+  grid-template-columns: 25% 25% 25% 25%;
   padding: 5rem;
   height: 20em;
   /* max-width: 1200px; */
   width: 100%;
   background-color: hsl(243, 87%, 12%);
+}
+.white-text {
+  color: white;
+}
+
+.section4_container li {
+  margin-bottom: 1.5em;
+}
+.flow-1 image {
+  max-width: 100%;
+}
+.flow-1 {
+  margin-top: 1em;
+  display: flex;
+  gap: 1.5em;
+}
+.flow-2 {
+  margin-top: 1em;
+  display: flex;
+  gap: 1.5em;
 }
