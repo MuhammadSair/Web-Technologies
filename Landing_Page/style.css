@@ -1,5 +1,6 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"); */
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -9,16 +10,17 @@ header {
   margin-bottom: 50px;
 }
 body {
+  display: block;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Raleway", sans-serif;
   /* background-color: aqua; */
 }
 #section_1 {
-  margin-top: 5rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-top: 3rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 ul {
   list-style: none;
@@ -52,7 +54,10 @@ p {
   width: 12em;
   height: 3em;
   left: 300px;
-  background-color: lightblue;
+  background-color: hsl(224, 93%, 58%);
+}
+.mid-section button:hover {
+  cursor: pointer;
 }
 #section_2 {
   background-image: url("images/bg-curve-desktop.svg");
@@ -62,9 +67,9 @@ p {
   margin: 0;
 }
 .bottom-section {
-  margin-top: 10em;
-  margin-left: 10em;
-  margin-right: 10em;
+  /* margin-top: 5em;
+  margin-left: 5em;
+  margin-right: 5em; */
   display: grid;
   grid-template-columns: 50% 50%;
   grid-area: 5em;
@@ -111,7 +116,7 @@ p {
   bottom: 10px;
 
   border-radius: 50%;
-  border-color: green;
+  /* border-color: green; */
   height: 50px;
   width: 50px;
   background-image: url("images/avatar-testimonial.jpg");
@@ -152,8 +157,34 @@ p {
   margin: 5em;
 }
 .section3_container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 5rem;
   height: 20em;
   /* max-width: 1200px; */
   width: 100%;
-  background-color: blue;
+  background-color: hsl(238, 22%, 44%);
+}
+.textfield {
+  height: 50px;
+  width: 50em;
+}
+.section3_container button {
+  margin-top: 1em;
+  background-color: hsl(224, 93%, 58%);
+  width: 15em;
+  height: 3em;
+}
+.section3_container button:hover {
+  cursor: pointer;
+  background-color: hsl(224, 93%, 58%);
+}
+.section4_container {
+  display: grid;
+  grid-template-columns: 50% 50% 50% 50%;
+  padding: 5rem;
+  height: 20em;
+  /* max-width: 1200px; */
+  width: 100%;
+  background-color: hsl(243, 87%, 12%);
 }
