@@ -68,7 +68,7 @@ h5 {
   height: 200px;
   box-shadow: 0 10px 10px grey;
   margin-bottom: 20px;
-  overflow: hidden;
+  overflow: auto;
 }
 .imgBox {
   position: relative;
