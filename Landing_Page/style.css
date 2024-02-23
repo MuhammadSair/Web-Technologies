@@ -62,7 +62,9 @@ p {
   margin: 0;
 }
 .bottom-section {
-  margin: 10em;
+  margin-top: 10em;
+  margin-left: 10em;
+  margin-right: 10em;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-area: 5em;
@@ -74,6 +76,12 @@ p {
 .bottom-section h1 {
   width: 50%;
   margin-bottom: 1em;
+}
+.left_col h1 {
+  width: 100%;
+}
+.left_col p {
+  width: 100%;
 }
 .productive_box {
   position: relative;
@@ -99,13 +107,13 @@ p {
   position: absolute;
   display: inline-block;
   top: 10em;
-  left: 10px;
+  left: 2em;
   bottom: 10px;
 
   border-radius: 50%;
   border-color: green;
-  height: 80px;
-  width: 80px;
+  height: 50px;
+  width: 50px;
   background-image: url("images/avatar-testimonial.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -142,4 +150,10 @@ p {
 }
 .right_col {
   margin: 5em;
+}
+.section3_container {
+  height: 20em;
+  /* max-width: 1200px; */
+  width: 100%;
+  background-color: blue;
 }
