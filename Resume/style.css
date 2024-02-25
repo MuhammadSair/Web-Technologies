@@ -33,10 +33,11 @@ h5 {
   margin-bottom: 5px;
 }
 .container {
-  /* position: relative; */
+  position: relative;
   max-width: 1000px;
   width: 100%;
-  min-height: 1000px;
+  /* min-height: 1000px; */
+  /* height: auto; */
 
   margin: 10px;
   background: white;
@@ -44,6 +45,7 @@ h5 {
   grid-template-columns: 1fr 2fr;
   /* grid-template-rows: 1fr 2fr; */
   box-shadow: 0 10px 10px grey;
+  object-fit: cover;
 }
 .container .left_Side {
   position: relative;
@@ -54,9 +56,10 @@ h5 {
 .container .right_Side {
   position: relative;
   background: white;
-  /* padding: 20px; */
-  max-height: 1000px;
-  /* border: 2px solid red; */
+  /* padding: 10px; */
+}
+.container .right_Side li {
+  padding-right: 10px;
 }
 .container .topright_Side {
   position: relative;
@@ -69,6 +72,13 @@ h5 {
   box-shadow: 0 10px 10px grey;
   margin-bottom: 20px;
   overflow: auto;
+}
+.right_Side {
+  position: relative;
+  /* border: 2px solid red; */
+  /* height: auto; */
+  object-fit: contain;
+  /* overflow: hidden; */
 }
 .imgBox {
   position: relative;
@@ -136,6 +146,7 @@ h5 {
 .right_Side span {
   text-decoration: underline;
 }
+
 .line {
   margin-bottom: 10px;
 }
