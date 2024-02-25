@@ -25,9 +25,11 @@ body {
   margin-left: 5rem;
   margin-right: 5rem;
 }
-ul {
-  list-style: none;
+
+#section_1 a {
+  color: grey;
 }
+
 .navbar {
   display: flex;
   justify-content: flex-end;
@@ -163,10 +165,12 @@ p {
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 5rem;
-  height: 20em;
+  height: auto;
   /* max-width: 1200px; */
-  width: 100%;
+  width: auto;
   background-color: hsl(238, 22%, 44%);
+  object-fit: cover;
+  overflow: hidden;
 }
 .textfield {
   height: 50px;
@@ -186,7 +190,8 @@ p {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   padding: 5rem;
-  height: 20em;
+  height: auto;
+  gap: 2em;
   /* max-width: 1200px; */
   width: 100%;
   background-color: hsl(243, 87%, 12%);
@@ -211,6 +216,16 @@ p {
   display: flex;
   gap: 1.5em;
 }
-@media screen {
-  
+@media only screen and (max-width: 1540px) {
+  .section4_container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .section4_container {
+    grid-template-columns: 1fr;
+  }
+  .section3_container {
+    grid-template-columns: 1fr;
+  }
 }
