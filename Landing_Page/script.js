@@ -1,3 +1,5 @@
+//JS Practice only
+
 let carname
 carname="Grandi"
 
@@ -46,4 +48,6 @@ function outside(n) {
    return inside
    
 }
-const
+const fnouside=outside(7)
+console.log(fnouside(5))
+console.log(outside(4)(7)) 
