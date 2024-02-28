@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-image: url("https://solaz.arrowtheme.com/wp-content/uploads/2016/11/bg-breadcrumd.jpg");
+}
+.navbar {
+  display: flex;
+}
+/* .navbar li {
+  color: white;
+  display: inline-block;
+  margin-inline: 20px;
+} */
