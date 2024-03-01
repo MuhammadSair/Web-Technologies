@@ -4,29 +4,55 @@
 body {
 }
 
-/* .navbar {
+/* .navlist {
   display: flex;
 } */
 #top-section {
-  background-image: url("assets/alchemyrefiner_alchemymagic_3_4d16375b-f477-4e1f-9383-3b1d3adf7d09_0.jpg");
+  background-image: url("https://images.pexels.com/photos/1001965/pexels-photo-1001965.jpeg?cs=srgb&dl=pexels-iv%C3%A1n-rivero-1001965.jpg&fm=jpg&_gl=1*ipeo84*_ga*ODI2Mjk2OTI5LjE3MDkyMjY4NDk.*_ga_8JE65Q40S6*MTcwOTIyNjg0OS4xLjEuMTcwOTIyNjkwOC4wLjAuMA..");
   height: 100vh;
   background-size: cover;
   overflow: auto;
 }
-.navbar img {
+.navbar {
+  background-color: #3d3935;
+  width: 100%;
+}
+.navlist {
+  position: absolute;
+
+  width: 100%;
+  margin-left: 8em;
+}
+.logo-container {
+  position: relative;
+  /* color: ; */
+  background-color: #b58a61;
+  margin-left: 1em;
+  z-index: 1;
+  height: 6em;
+  width: 6em;
+}
+.navlist img {
+  position: relative;
   margin-left: 1em;
   margin-right: 1em;
-  margin-bottom: 1em;
+  /* padding:10em */
+  /* margin-bottom: 1em; */
   width: 8em;
   height: 8em;
   /* opacity:1 */
 
-  background-color: #b58a61;
+  /* background-color: #b58a61; */
 }
-.navbar ul {
+.navlist ul {
   padding: 1em;
+}
+#middle-section {
+  padding-left: 5em;
+  padding-right: 5em;
 }
 .middle-section {
   background-color: #b58a61;
-  height: 100vh;
+  height: 50vh;
+  padding-top: 5em;
 }
