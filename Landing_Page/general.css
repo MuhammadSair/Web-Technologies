@@ -1,0 +1,75 @@
+:root {
+  --anotonio: "Anotonio", san-serif;
+  --spartan: "League Spartan", san-serif;
+  --white: #fff;
+  --white-op-1: rgba(255, 255, 255, 0.1);
+  --white-op-2: rgba(255, 255, 255, 0.2);
+  --white-op-5: rgba(255, 255, 255, 0.5);
+  --white-op-75: rgba(255, 255, 255, 0.75);
+  --background: #070724;
+  --accent: #419ebb;
+
+  --mercury: #419ebb;
+  --venus: #eda249;
+  --earth: #6d2ed5;
+  --mars: #d14c32;
+  --jupiter: #d83a34;
+  --saturn: #cd5120;
+  --uranus: #1ec1a2;
+  --netune: #2d68f0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: var(--white);
+  font-family: var(--spartan);
+  background-color: var(--background);
+  font-weight: 400;
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+  background-image: url("assets/background-stars.svg");
+}
+.h-xl {
+  color: var(--white);
+  font-family: var(--antonio);
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.h-lg {
+  color: var(--white);
+  font-family: var(--antonio);
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.h-md {
+  color: var(--white);
+  font-family: var(--antonio);
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.15rem;
+  text-transform: uppercase;
+}
+.h-sm {
+  color: var(--white);
+  font-family: var(--antonio);
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
