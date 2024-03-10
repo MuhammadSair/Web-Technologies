@@ -47,6 +47,12 @@ body {
   margin-top: 10em;
   margin-bottom: 10em;
 }
+.mid-right {
+  background-image: url("images/illustration-1.svg");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .mid-right img {
   max-width: 100%;
 }
@@ -55,7 +61,6 @@ p {
   margin-bottom: 1em;
 }
 .mid-section button {
-  position: absolute;
   width: 12em;
   height: 3em;
   left: 300px;
@@ -63,6 +68,11 @@ p {
 }
 .mid-section button:hover {
   cursor: pointer;
+}
+.get-started {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
 }
 #section_2 {
   background-image: url("images/bg-curve-desktop.svg");
@@ -227,5 +237,9 @@ p {
   }
   .section3_container {
     grid-template-columns: 1fr;
+  }
+  .get-started {
+    display: flex;
+    flex-direction: column;
   }
 }
