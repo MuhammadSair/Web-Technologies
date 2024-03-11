@@ -20,12 +20,18 @@ body {
   /* max-width: 1200px; */
   /* background-color: aqua; */
 }
-#section_1 {
+header {
+  /* background-color: gray; */
   margin-top: 3rem;
   margin-left: 5rem;
   margin-right: 5rem;
 }
 
+#section_1 {
+  margin-top: 3rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
 #section_1 a {
   color: grey;
 }
