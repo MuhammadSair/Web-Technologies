@@ -49,9 +49,10 @@ body {
 }
 .mid-right {
   background-image: url("images/illustration-1.svg");
-  background-size: 50%;
+  background-size: 60%;
   background-position: center;
   background-repeat: no-repeat;
+  height: 20em;
 }
 .mid-right img {
   max-width: 100%;
@@ -226,6 +227,56 @@ p {
   display: flex;
   gap: 1.5em;
 }
+li {
+  list-style: none;
+}
+.section-5 {
+  background-color: hsl(224, 93%, 58%);
+}
+/* Apply styles to the form container */
+.form {
+  max-width: 400px;
+  margin: auto;
+  /* background-color: hsl(224, 93%, 58%); */
+}
+.list-rpw {
+  display: flex;
+}
+/* Apply styles to the form itself */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: hsl(224, 93%, 58%); */
+}
+
+/* Apply styles to the input fields */
+input {
+  /* width: 100%; */
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Arrange Name and Email in a row */
+input:nth-child(1),
+input:nth-child(2) {
+  margin-right: 10px;
+}
+
+/* Optional: Style placeholders */
+input::placeholder {
+  color: #888;
+}
+
+/* Optional: Add focus styles for better visual feedback */
+input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
 @media only screen and (max-width: 1540px) {
   .section4_container {
     grid-template-columns: 1fr 1fr;
