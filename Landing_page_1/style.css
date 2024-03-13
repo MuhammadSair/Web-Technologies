@@ -27,12 +27,16 @@ header {
   margin-right: 5rem;
 }
 
-#section_1 {
+.mid-section {
   margin-top: 3rem;
   margin-left: 5rem;
   margin-right: 5rem;
+  /* background-color: grey; */
 }
-#section_1 a {
+.margin-less {
+  /* background-color: grey; */
+}
+header a {
   color: grey;
 }
 
@@ -40,6 +44,8 @@ header {
   display: flex;
   justify-content: flex-end;
   float: right;
+  height: 100%;
+  /* gap: 20px; */
 }
 .navbar li {
   display: inline-block;
