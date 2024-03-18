@@ -1,100 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Your description here">
-    <meta name="author" content="Your Name">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Your description here" />
+    <meta name="author" content="Your Name" />
     <title>Contact Us</title>
-	
 
-    <link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="form-style.css">
-</head>
-<body>
-        <header>
-            <img src="images\logo.svg" alt="logo" />
-            <nav class="navbar">
-              <ul>
-                <li><a href="./index.html">Features</a></li>
-                <li><a href="Features">Team</a></li>
-                <li><a href="./form.html">Contact Us</a></li>
-              </ul>
-            </nav>
-          </header>
-     <br> <br> <br>
-	<div class="container">
-     <div class="starter-template">
-      <div class="row">
-        <div class="col-md-6">
-         <div class="panel panel-primary">
-           <div class="panel-heading"><h4> <center>Get a Quote</center> </h4></div> <br> <br>
-				<form id="registration-form" method="POST" class="form-horizontal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
-					<div class="form-group">
-						<label class="col-md-2 control-label" for="Fname">First Name</label>
-						<div class="col-md-8">
-							<input type="text" class="form-control" id="Fname" name="Fname" placeholder="Your first name" />
-						</div>
-					</div>
-					<div class="form-group">
-						<label class="col-md-2 control-label" for="Lname">Last Name</label>
-						<div class="col-md-8">
-							<input type="text" class="form-control" id="Lname" name="Lname" placeholder="Your Last name" />
-						</div>
-					</div>
-					<div class="form-group">
-						<label class= "col-md-2 control-label" for="saddress">Street Address</label>
-						<div class="col-md-8">
-							<input type="text" class="form-control" id="saddress" name="saddress" placeholder="Your street address" />
-						</div>
-					</div>
-					<div class="form-group">
-						<label class= "col-md-2 control-label" for="city">City</label>
-						<div class="col-md-8">
-							<input type="text" class="form-control" id="city" name="city" placeholder="Your city name" />
-						</div>
-					</div>
-					<div class="form-group">
-						<label class= "col-md-2 control-label" for="state">State</label>
-						<div class="col-md-8">
-							<input type="text" class="form-control" id="state" name="state" placeholder="Your state" />
-						</div>
-					</div>
-					<div class="form-group">
-						<label class= "col-md-2 control-label" for="zip">Zip Code</label>
-						<div class="col-md-8">
-							<input type="text" class="form-control" id="zip" name="zip" placeholder="Your Zip please" />
-						</div>
-					</div>
-					<div class="form-group">
-						<label class= "col-md-2 control-label" for="messageb">Message</label>
-						<div class="col-md-8">
-                               <textarea class="form-control" id="messageb" name="messageb" rows="7" placeholder="Your enter your requirements" /></textarea>
-						</div>
-					</div>
-
-					<div class="form-group">
-						<div class="col-md-6 col-md-offset-2" >
-						<button type="submit" class="btn btn-success" id="saveData" disabled>Submit</button>
-						</div>
-					</div>
-			</div>
-		   </div>
-            </div>
-		  </div>
-		</div>
-		  <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <center><p> &copy; CleaningAtoZ 2015</p> </center>
-                </div>
-            </div>
-            
-        </footer>
-	  </div>
-
-</body>
-
-
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form-style.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="images\logo.svg" alt="logo" />
+      <nav class="navbar">
+        <ul>
+          <li><a href="./index.html">Features</a></li>
+          <li><a href="Features">Team</a></li>
+          <li><a href="./form.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <br />
+    <br />
+    <br />
+    <h4><center>Get a Quote</center></h4>
+    <br />
+    <br />
+    <form id="registration-form">
+      <label for="Fname">First Name</label>
+      <input
+        type="text"
+        id="Fname"
+        name="Fname"
+        placeholder="Your first name"
+      />
+      <label for="Lname">Last Name</label>
+      <input type="text" id="Lname" name="Lname" placeholder="Your Last name" />
+      <label for="saddress">Street Address</label>
+      <input
+        type="text"
+        id="address"
+        name="saddress"
+        placeholder="Your street address"
+      />
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" placeholder="Your city name" />
+      <label for="state">State</label>
+      <input type="text" id="state" name="state" placeholder="Your state" />
+      <label for="zip">Zip Code</label>
+      <input type="text" id="zip" name="zip" placeholder="Your Zip please" />
+      <label for="messageb">Message</label>
+      <textarea
+        id="messageb"
+        name="messageb"
+        rows="7"
+        placeholder="Your enter your requirements"
+      ></textarea>
+      <button>Submit</button>
+    </form>
+    <footer>
+      <center><p>&copy; CleaningAtoZ 2015</p></center>
+    </footer>
+  </body>
 </html>
