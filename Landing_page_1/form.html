@@ -10,7 +10,8 @@
 
     <link rel="stylesheet" href="form-style.css" />
     <link rel="stylesheet" href="style.css" />
-    <script type="module" src="script.js"></script>
+
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header>
@@ -27,40 +28,36 @@
     <br />
     <br />
     <h4><center>Get a Quote</center></h4>
+
     <br />
     <br />
-    <form id="registration-form">
-      <label for="Fname">First Name</label>
-      <input
-        type="text"
-        id="Fname"
-        name="Fname"
-        placeholder="Your first name"
-      />
-      <label for="Lname">Last Name</label>
-      <input type="text" id="Lname" name="Lname" placeholder="Your Last name" />
-      <label for="saddress">Street Address</label>
-      <input
-        type="text"
-        id="address"
-        name="saddress"
-        placeholder="Your street address"
-      />
-      <label for="city">City</label>
-      <input type="text" id="city" name="city" placeholder="Your city name" />
-      <label for="state">State</label>
-      <input type="text" id="state" name="state" placeholder="Your state" />
-      <label for="zip">Zip Code</label>
-      <input type="text" id="zip" name="zip" placeholder="Your Zip please" />
-      <label for="messageb">Message</label>
-      <textarea
-        id="messageb"
-        name="messageb"
-        rows="7"
-        placeholder="Your enter your requirements"
-      ></textarea>
-      <button>Submit</button>
+    <!-- <div class="container"> -->
+    <form id="form" action="/">
+      <!-- <h1>Registration</h1> -->
+      <div class="input-control">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" />
+        <div class="error"></div>
+      </div>
+      <div class="input-control">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="text" />
+        <div class="error"></div>
+      </div>
+      <div class="input-control">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" />
+        <div class="error"></div>
+      </div>
+      <div class="input-control">
+        <label for="message">Message</label>
+        <input id="message" name="message" type="message" />
+        <div class="error"></div>
+      </div>
+
+      <button type="submit" class="submit">Sign Up</button>
     </form>
+
     <footer>
       <center><p>&copy; Fylo 2024</p></center>
     </footer>

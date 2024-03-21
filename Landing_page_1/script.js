@@ -1,62 +1,76 @@
-const form = document.getElementById("registration-form");
-const username = document.getElementById("Fname");
-const address = document.getElementById("saddress");
-const city = document.getElementById("city");
-const state = document.getElementById("state");
-const zip = document.getElementById("zip");
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const message = document.getElementById('message');
+
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    validateInputs();
+});
 
 const setError = (element, message) => {
-    // Assuming you have a div with class 'error' for each input to display error message
-    const errorDisplay = element.parentElement.querySelector('.error');
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
     errorDisplay.innerText = message;
-    element.classList.add('error');
-};
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success')
+}
 
 const setSuccess = element => {
-    const errorDisplay = element.parentElement.querySelector('.error');
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
     errorDisplay.innerText = '';
-    element.classList.remove('error');
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
 };
+
+const isValidEmail = email => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
 
 const validateInputs = () => {
     const usernameValue = username.value.trim();
-    const addressValue = address.value.trim();
-    const cityValue = city.value.trim();
-    const stateValue = state.value.trim();
-    const zipValue = zip.value.trim();
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+    const messageValue = message.value.trim();
 
     if(usernameValue === '') {
-        setError(username, 'First name is required');
+        setError(username, 'Username is required');
     } else {
         setSuccess(username);
     }
 
-    if(addressValue === '') {
-        setError(address, 'Address is required');
+    if(emailValue === '') {
+        setError(email, 'Email is required');
+    } else if (!isValidEmail(emailValue)) {
+        setError(email, 'Provide a valid email address');
     } else {
-        setSuccess(address);
+        setSuccess(email);
     }
 
-    if(cityValue === '') {
-        setError(city, 'City is required');
+    if(passwordValue === '') {
+        setError(password, 'Password is required');
+    } else if (passwordValue.length < 8 ) {
+        setError(password, 'Password must be at least 8 character.')
     } else {
-        setSuccess(city);
+        setSuccess(password);
     }
 
-    if(stateValue === '') {
-        setError(state, 'State is required');
-    } else {
-        setSuccess(state);
+    if(messageValue === '') {
+        setError(message, 'Message field cannot be empty.');
+    } else if (messageValue.length<20) {
+        setError(message, "Message must be of 20 character.");
+    }else if (messageValue.length>100) {
+        setError(message, "Message could not exceed 100 characters.");
+    }  
+    else {
+        setSuccess(message);
     }
 
-    if(zipValue === '') {
-        setError(zip, 'Zip code is required');
-    } else {
-        setSuccess(zip);
-    }
 };
-
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    validateInputs();
-});
