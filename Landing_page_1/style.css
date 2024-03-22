@@ -21,7 +21,7 @@ body {
   /* background-color: aqua; */
 }
 header {
-  /* background-color: gray; */
+  /* background-color: #b58a61; */
   margin-top: 3rem;
   margin-left: 5rem;
   margin-right: 5rem;
@@ -196,9 +196,10 @@ p {
   object-fit: cover;
   overflow: hidden;
 }
+
 .textfield {
   height: 50px;
-  width: 50em;
+  width: 40em;
 }
 .section3_container button {
   margin-top: 1em;
