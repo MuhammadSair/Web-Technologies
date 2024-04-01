@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News blog</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="Header">
@@ -24,15 +24,15 @@
           <ul>
             <li class="Search">
               <form action="/ajw/search/results/" method="get">
-                <fieldset>
-                  <input
-                    type="text"
-                    name="keywords"
-                    value=""
-                    class="SearchKeywords"
-                  />
-                  <input type="submit" value="Search" class="SearchSubmit" />
-                </fieldset>
+                <!-- <fieldset> -->
+                <input
+                  type="text"
+                  name="keywords"
+                  value=""
+                  class="SearchKeywords"
+                />
+                <input type="submit" value="Search" class="SearchSubmit" />
+                <!-- </fieldset> -->
               </form>
             </li>
           </ul>
@@ -50,15 +50,21 @@
               >
             </li>
             <li class="Facebook">
-              <a
-                href="https://www.facebook.com/AJW.Asahi"
-                title="Facebook"
-                target="_blank"
-                >Facebook</a
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+                height="20"
+                width="20"
               >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                />
+              </svg>
             </li>
           </ul>
         </div>
+
         <!-- SocialNav END -->
         <!-- LangNav BGN -->
         <div id="LangNav">
@@ -164,6 +170,63 @@
         <!-- GlobalNavInner END -->
       </div>
       <!-- GlobalNav END -->
+    </div>
+    <div class="headInfoArea">
+      <p class="EnLastUpdated">Monday, April 1, 2024</p>
+      <ul class="EnContentsList">
+        <li class="EnWeather">
+          <p class="Image">
+            <img src="https://www.asahicom.jp/weather/images/hare_s.png" />
+          </p>
+          <span class="EnWeatherArea">TOKYO</span
+          ><span class="EnWeatherPop">POP : 10%</span>
+        </li>
+
+        <li class="EnExchange">
+          <ul>
+            <li class="USD-JPY"><span>USD/JPY</span>151.39</li>
+            <li class="EUR-JPY"><span>EUR/JPY</span>163.35</li>
+          </ul>
+        </li>
+        <li class="EnTraffic"></li>
+      </ul>
+      <hr />
+    </div>
+    <div id="mainSection">
+      <div class="left">
+        <div class="notoResident">
+          <div>
+            <a href="">LOCAL LIVES MATTER</a>
+            <p>Noto resident pulling quake-hit community back together</p>
+            <span>April 1, 2024</span>
+            <span class="notoResidentBold"
+              >WAJIMA, Ishikawa Prefecture—Mitsunobu Inoike is on a mission to
+              keep his splintered community together after a powerful earthquake
+              on the Noto Peninsula three months ago displaced most of its
+              residents. v</span
+            >
+          </div>
+
+          <div class="notoResident-2">
+            <a href="">LOCAL LIVES MATTER</a>
+            <p>Noto resident pulling quake-hit community back together</p>
+            <span>April 1, 2024</span>
+            <span class="notoResidentBold"
+              >WAJIMA, Ishikawa Prefecture—Mitsunobu Inoike is on a mission to
+              keep his splintered community together after a powerful earthquake
+              on the Noto Peninsula three months ago displaced most of its
+              residents. v</span
+            >
+          </div>
+        </div>
+        <div class="someAbe">
+          <img
+            src="//p.potaufeu.asahi.com/d900-p/picture/28380130/f44d10361e1bfd95c57213570ed4b924.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="right">List</div>
     </div>
   </body>
 </html>
