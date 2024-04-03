@@ -64,6 +64,7 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: hidden;
 }
 .card {
   padding-right: 2px;
@@ -184,4 +185,21 @@ html {
 .bodyImage {
   display: flex;
   justify-content: center;
+}
+.menu-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-button div {
+  width: 2rem;
+  height: 0.25rem;
+  background: white;
 }

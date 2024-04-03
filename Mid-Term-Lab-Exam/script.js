@@ -11,3 +11,12 @@ images.forEach(image => {
     firstMenuItem.textContent = this.alt;
   });
 });
+// Get the slider and the scroll button
+let slider = document.querySelector('.slider');
+let scrollButton = document.querySelector('#scrollButton');
+
+// Add a click event listener to the scroll button
+scrollButton.addEventListener('click', function() {
+  // Scroll the slider to the right by 100px
+  slider.scrollLeft += 100;
+});
