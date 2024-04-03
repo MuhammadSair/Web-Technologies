@@ -10,8 +10,15 @@ body {
   text-align: left;
   background-color: #fff;
 }
+nav {
+  position: sticky;
+}
+.stick-top {
+  position: sticky;
+}
 .mainNav {
   margin: 3em;
+  position: sticky;
 }
 .mainNav {
   display: flex;
@@ -154,5 +161,94 @@ hr {
   margin: 1em;
 }
 .box {
-  border: solid 1px black;
+  border: solid 4px #3c5d7a;
+}
+.insideBox ~ p div button {
+  margin: 1em;
+}
+.box button {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  --zephr-color-text-main: #000000;
+  --zephr-color-text-tinted: #333333;
+  --zephr-color-background-main: #ffffff;
+  --zephr-color-background-tinted: #cccccc;
+  --zephr-color-accent-main: #dcf1fb;
+  --zephr-color-accent-tinted: #81cdf1;
+  --zephr-color-action-main: #618daf;
+  --zephr-color-action-tinted: #395971;
+  --zephr-color-warning-main: #d90b00;
+  --zephr-color-warning-tinted: #ff190d;
+  --zephr-typography-title-font: Roboto;
+  --zephr-typography-title-fallbackFont: sans-serif;
+  --zephr-typography-body-font: Fira Sans;
+  --zephr-typography-body-fallbackFont: sans-serif;
+  --zephr-button-fontWeight: normal;
+  --zephr-button-fontSize: 16;
+  --zephr-button-borderWidth: 0;
+  --zephr-button-borderRadius: 9;
+  --zephr-button-height: 50;
+  --zephr-input-borderColor: #333333;
+  --zephr-input-borderWidth: 1;
+  --zephr-input-borderRadius: 5;
+  --zephr-input-height: 50;
+  margin: 0;
+  -webkit-appearance: button;
+  box-sizing: border-box;
+  height: calc(var(--zephr-button-height) * 1px);
+  line-height: 0;
+  padding: 0 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+  border-radius: calc(var(--zephr-button-borderRadius) * 1px);
+  font-size: calc(var(--zephr-button-fontSize) * 1px);
+  font-weight: normal;
+  cursor: pointer;
+  border-style: solid;
+  border-width: calc(var(--zephr-button-borderWidth) * 1px);
+  border-color: var(--zephr-color-action-tinted);
+  transition: backdrop-filter 0.2s, background-color 0.2s;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  background-color: var(--zephr-color-action-main);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  font-family: var(--zephr-typography-body-font),
+    var(--zephr-typography-body-fallbackFont);
+}
+.paddedElements {
+  margin: 1em;
+}
+.withBox {
+  margin-left: 1em;
+}
+.box p {
+  font-weight: 500;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.card-content {
+  /* flex: 1; */
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-image {
+  /* float: right; */
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  /* flex: 1; */
 }
