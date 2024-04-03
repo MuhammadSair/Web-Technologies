@@ -203,3 +203,40 @@ html {
   height: 0.25rem;
   background: white;
 }
+.horror {
+  --desktop-height: initial;
+  --embed-height-mobile: initial;
+  --embed-height-desktop: initial;
+  text-align: center;
+  font-size: clamp(
+    calc(var(--font-min) * 1px),
+    calc(100vw * var(--font-max) / 1120),
+    calc(var(--font-max) * 1px)
+  );
+  text-decoration: none;
+  color: #083fff;
+  font-family: ProximaNovaCond;
+  font-weight: 800;
+  font-style: normal;
+  --font-min: 14;
+  --font-max: 36;
+}
+.red {
+  color: red;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+}
