@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "exrpess": "^0.0.1-security"
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "exrpess": "^0.0.1-security",
+    "mongoose": "^8.3.2"
   }
 }

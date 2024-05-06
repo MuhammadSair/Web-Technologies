@@ -1,11 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
+  font-size: 15px;
+  font-family: "Poppins", Arial;
+  color: #9c9c9c;
+  font-weight: normal;
   margin: 0;
   padding: 0;
 }
-
 /* .navlist {
   display: flex;
 } */
@@ -16,8 +20,10 @@ body {
   overflow: auto;
 }
 .navbar {
+  display: flex;
   background-color: #3d3935;
   width: 100%;
+  gap: 2em;
 }
 .navlist {
   position: absolute;
@@ -57,4 +63,6 @@ body {
   background-color: #b58a61;
   height: 50vh;
   padding-top: 5em;
+}
+nav li {
 }
