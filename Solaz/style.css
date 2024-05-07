@@ -1,6 +1,12 @@
-@tailwind base;
+/* <style>
+@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Sacramento&display=swap');
+</style> */
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+:root {
+  --main-color: #b58a61;
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,15 +23,21 @@ body {
   display: flex;
 } */
 #top-section {
-  background-image: url("assets/photo-1618773928121-c32242e63f39.avif");
+  /* background-image: url("https://solaz.arrowtheme.com/wp-content/uploads/revslider/home-1/slider_03-1-2.jpg"); */
+  background-image: url("https://solaz.arrowtheme.com/wp-content/uploads/revslider/home-1/slider_03-1-2.jpg");
+  /* background-image: url("https://solaz.arrowtheme.com/wp-content/uploads/2016/11/bg-breadcrumd.jpg"); */
+  /* url("https://solaz.arrowtheme.com/wp-content/uploads/revslider/home-1/slider_03-1-2.jpg") */
   height: 100vh;
-  background-size: 100%;
+  /* background-size: 100% 100%; */
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-size: inherit;
 }
 .logo-container {
   position: relative;
 
-  background-color: #b58a61;
+  background-color: var(--main-color);
   margin-left: 1em;
   z-index: 1;
   height: 6em;
@@ -40,6 +52,9 @@ body {
   width: 100%;
   /* gap: 2em; */
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure the navbar stays on top of other elements */
 }
 .nav-start {
   display: flex;
@@ -64,31 +79,40 @@ body {
   display: inline-block;
   vertical-align: middle; /* This will vertically center the SVG with the text */
 }
-#topmiddle {
+.top-middle {
   display: flex;
   flex-direction: column;
+  column-gap: 0em;
+  justify-content: center;
+  align-items: center;
 }
 .headlines {
   display: flex;
   justify-content: center;
-  font-size: 8vh;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serifs;
+  font-size: 60px;
+  font-weight: 500;
+  font-family: "Caramel", cursive;
+  font-style: normal;
   color: white;
+  /* margin-top: 1em; */
+  color: var(--main-color);
 }
-.sub-headlines {
+.headlines-lower {
   display: flex;
   justify-content: center;
+  font-size: 50px;
+  font-family: "Sacramento", cursive;
+  font-style: normal;
+  color: white;
+}
 
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serifs;
-  color: #b58a61;
-}
-.explore {
-  display: flex;
-  justify-content: center;
-  /* font-size: 8vh; */
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serifs;
-  color: white;
-  border: 2px solid black;
+.explore-container {
+  text-transform: uppercase;
+  border: 1px solid white;
+  padding: 0.5em;
+  background-color: var(--main-color);
+  margin-top: 0.5em;
+  /* Add any other styles you want for the explore container here */
 }
 #middle-section {
   padding-left: 5em;
