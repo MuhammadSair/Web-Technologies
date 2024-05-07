@@ -1,11 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-size: 15px;
   font-family: "Poppins", Arial;
-  color: #9c9c9c;
+  color: white;
   font-weight: normal;
   margin: 0;
   padding: 0;
@@ -14,46 +17,78 @@ body {
   display: flex;
 } */
 #top-section {
-  background-image: url("https://images.pexels.com/photos/1001965/pexels-photo-1001965.jpeg?cs=srgb&dl=pexels-iv%C3%A1n-rivero-1001965.jpg&fm=jpg&_gl=1*ipeo84*_ga*ODI2Mjk2OTI5LjE3MDkyMjY4NDk.*_ga_8JE65Q40S6*MTcwOTIyNjg0OS4xLjEuMTcwOTIyNjkwOC4wLjAuMA..");
+  background-image: url("assets/photo-1618773928121-c32242e63f39.avif");
   height: 100vh;
-  background-size: cover;
-  overflow: auto;
-}
-.navbar {
-  display: flex;
-  background-color: #3d3935;
-  width: 100%;
-  gap: 2em;
-}
-.navlist {
-  position: absolute;
-
-  width: 100%;
-  margin-left: 8em;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .logo-container {
   position: relative;
-  /* color: ; */
+
   background-color: #b58a61;
   margin-left: 1em;
   z-index: 1;
   height: 6em;
   width: 6em;
+  padding: 0.5em;
+  display: flex;
 }
-.navlist img {
-  position: relative;
-  margin-left: 1em;
-  margin-right: 1em;
-  /* padding:10em */
-  /* margin-bottom: 1em; */
-  width: 8em;
-  height: 8em;
-  /* opacity:1 */
+.navbar {
+  display: flex;
+  /* background-color: #3d3935; */
+  background-color: transparent;
+  width: 100%;
+  /* gap: 2em; */
+  justify-content: space-between;
+}
+.nav-start {
+  display: flex;
+  gap: 1em;
+  /* padding: 2em; */
+}
 
-  /* background-color: #b58a61; */
+.nav ul {
+  white-space: normal;
+  font-weight: 600;
+  padding: 2em;
+  display: flex;
+  gap: 2em;
 }
-.navlist ul {
-  padding: 1em;
+.nav-end ul {
+  gap: 1em;
+  padding: 2em;
+  display: flex;
+  /* float: inline-end; */
+}
+.feather {
+  display: inline-block;
+  vertical-align: middle; /* This will vertically center the SVG with the text */
+}
+#topmiddle {
+  display: flex;
+  flex-direction: column;
+}
+.headlines {
+  display: flex;
+  justify-content: center;
+  font-size: 8vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serifs;
+  color: white;
+}
+.sub-headlines {
+  display: flex;
+  justify-content: center;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serifs;
+  color: #b58a61;
+}
+.explore {
+  display: flex;
+  justify-content: center;
+  /* font-size: 8vh; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serifs;
+  color: white;
+  border: 2px solid black;
 }
 #middle-section {
   padding-left: 5em;
@@ -63,6 +98,4 @@ body {
   background-color: #b58a61;
   height: 50vh;
   padding-top: 5em;
-}
-nav li {
 }
