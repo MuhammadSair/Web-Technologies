@@ -32,7 +32,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-size: inherit;
 }
 .logo-container {
   position: relative;
@@ -47,8 +46,8 @@ body {
 }
 .navbar {
   display: flex;
-  /* background-color: #3d3935; */
-  background-color: transparent;
+  background-color: #3d3935;
+  /* background-color: transparent; */
   width: 100%;
   /* gap: 2em; */
   justify-content: space-between;
@@ -75,6 +74,41 @@ body {
   display: flex;
   /* float: inline-end; */
 }
+.nav li {
+  cursor: pointer;
+  list-style: none;
+}
+/* Hide the dropdown content by default */
+.dropdown-content {
+  display: none !important;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Show the dropdown menu on hover */
+.dropbtn li:hover .dropdown-content {
+  display: block !important;
+}
+
+/* Style dropdown links */
+.dropdown-content li {
+  color: black;
+  padding-bottom: 12px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  font-family: poppins;
+  font-weight: 100;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content li:hover {
+  background-color: #ddd;
+}
+
 .feather {
   display: inline-block;
   vertical-align: middle; /* This will vertically center the SVG with the text */
@@ -121,5 +155,46 @@ body {
 .middle-section {
   background-color: #b58a61;
   height: 50vh;
-  padding-top: 5em;
+  background-image: url("https://solaz.arrowtheme.com/wp-content/uploads/2019/08/home2_img2.png?id=1538");
+  background-repeat: no-repeat;
+  /* padding-top: 5em; */
+}
+.middle-section-left {
+  margin-left: 28px;
+  padding-right: 10px;
+}
+.reservations {
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 2px;
+  font-size: 56px;
+}
+.reservations div {
+  font-family: "Poppins";
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.67);
+  margin-bottom: 0px;
+}
+.reservations span {
+  display: block !important;
+}
+.middle-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.spacer {
+  height: 71px;
+  clear: block;
+  display: block;
+}
+.section-1 h1 {
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #3d3935;
+  display: flex;
+  justify-content: center;
 }
