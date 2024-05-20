@@ -6,6 +6,8 @@
 @tailwind utilities; */
 :root {
   --main-color: #b58a61;
+  --secondary-color: #9c9c9c;
+  --tertiary-color: #e7ecf1;
 }
 * {
   margin: 0;
@@ -34,7 +36,7 @@ body {
   background-position: center center;
 }
 .logo-container {
-  position: relative;
+  position: absolute;
 
   background-color: var(--main-color);
   margin-left: 1em;
@@ -47,6 +49,7 @@ body {
 .navbar {
   display: flex;
   background-color: #3d3935;
+  flex-wrap: wrap;
   /* background-color: transparent; */
   width: 100%;
   /* gap: 2em; */
@@ -67,11 +70,13 @@ body {
   padding: 2em;
   display: flex;
   gap: 2em;
+  flex-wrap: wrap;
 }
 .nav-end ul {
   gap: 1em;
   padding: 2em;
   display: flex;
+  flex-wrap: wrap;
   /* float: inline-end; */
 }
 .nav li {
@@ -197,4 +202,100 @@ body {
   color: #3d3935;
   display: flex;
   justify-content: center;
+}
+.section-1 h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 28px auto 58px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+.room-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.room-card img {
+  /* height: auto; */
+}
+.room-card-text h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #3d3935;
+  font-size: 20px;
+  color: #3d3935;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+.room-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.room-card-text span {
+  display: flex;
+  justify-content: center;
+  color: var(--secondary-color);
+}
+.room-card-text div {
+  color: var(--main-color);
+  display: flex;
+  justify-content: center;
+}
+.primary-headline {
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #3d3935;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.section-2 {
+  padding: 5em;
+  background-color: var(--tertiary-color);
+}
+.services {
+  display: flex;
+  justify-content: center;
+  color: var(--secondary-color);
+}
+.secondary-card {
+  position: relative;
+  background-color: white;
+}
+.secondary-card::before {
+  content: "asdasd";
+  background-image: url("assets/image.png");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.secondary-card-text {
+  padding: 1em;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Poppins";
+  margin: 2em;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+.secondary-card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
 }
