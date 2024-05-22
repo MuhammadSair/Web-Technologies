@@ -1,5 +1,16 @@
 {
   "dependencies": {
-    "express": "^4.19.2"
-  }
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "solaz",
+  "version": "1.0.0",
+  "main": "home.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

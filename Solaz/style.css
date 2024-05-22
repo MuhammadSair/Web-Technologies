@@ -221,9 +221,9 @@ body {
   margin-left: 1em;
   margin-right: 1em;
 }
-.room-card img {
-  /* height: auto; */
-}
+/* .room-card img {
+  height: auto;
+} */
 .room-card-text h3 {
   font-family: "Poppins";
   font-weight: 600;
@@ -298,4 +298,105 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2em;
+}
+
+.section-3-left {
+  padding: 5em;
+  background-color: white;
+}
+.section-3 h1 {
+  font-family: "Poppins";
+  font-weight: 600;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+.section-3-left ul {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.list-container {
+  display: flex;
+  justify-content: left;
+  background-color: var(--tertiary-color);
+  padding: 1em;
+}
+.section-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Creates two equal-width columns */
+  grid-gap: 1em; /* Adds some space between grid items */
+}
+.tips {
+  margin-bottom: 1em;
+  row-gap: 2em;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #3d3935;
+  /* display: flex; */
+  /* justify-content: left; */
+  /* gap: 10em; */
+  flex-wrap: wrap;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.more-tips {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--main-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: right !important;
+}
+.section-3-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 4em;
+}
+
+.section-3-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.section-3-right input[type="text"],
+.section-3-right input[type="email"],
+.section-3-right textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+}
+
+.section-3-right input[type="submit"] {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #3d3935; /* Changed to black color used in navbar */
+  color: white;
+  padding: 4em;
+  font-family: "Poppins", Arial;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4em;
+  /* gap: 2em; */
+}
+footer div {
+  display: flex;
+  justify-content: center;
+}
+.footer-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
