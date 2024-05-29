@@ -1,4 +1,6 @@
-require("dotenv").config();
+// require("dotenv").config();
+const path = require("path");
+require("dotenv").config({ path: path.resolve(__dirname, "./.env") });
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
@@ -8,8 +10,21 @@ const app = express();
 const appLocals = require("./config/app-locals");
 
 app.locals = appLocals;
-console.log(process.env.URI);
-mongoose.connect(process.env.URI);
+console.log("mongodb connected with url", process.env.URI);
+console.log("session secret", process.env.SESSION_SECRET);
+// mongoose.connect(process.env.URI);
+// Connect to MongoDB
+mongoose
+  .connect("mongodb://localhost:27017/shoeStore", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log("Connected to MongoDB");
+  })
+  .catch((err) => {
+    console.error("Connection error", err);
+  });
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
