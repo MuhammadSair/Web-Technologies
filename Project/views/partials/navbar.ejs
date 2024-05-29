@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRMS</title>
+    <link rel="stylesheet" href="/stylesheets/navbar.css" />
+</head>
+
+<body>
+    <div class="sidebar">
+        <nav class="nav flex-column">
+            <% if (role==='admin' ) { %>
+                <a href="/admin/dashboard" class="label">Dashboard</a>
+                <a href="/admin/list-employees" class="label">Manage Employees</a>
+                <a href="/admin/list-hrs" class="label">Manage HRs</a>
+                <a href="/admin/leave-requests" class="label">Leave Requests</a>
+                <a href="/admin/attendance" class="label">Attendance</a>
+                <% } else if (role==='hr' ) { %>
+                    <a href="/hr/list-employees" class="label">Manage Employees</a>
+                    <a href="/hr/leave-requests" class="label">Leave Requests</a>
+                    <a href="/hr/attendance" class="label">Attendance</a>
+                    <% } %>
+                        <a href="/admin/logout" class="label">Logout</a>
+        </nav>
+    </div>
+
+    <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const sidebar = document.querySelector('.sidebar');
+        hamburger.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+            hamburger.classList.toggle('open');
+        });
+    </script>
+</body>
+
+</html>

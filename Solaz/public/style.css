@@ -1,0 +1,129 @@
+:root {
+  --main-color: #b58a61;
+  --secondary-color: #9c9c9c;
+  --tertiary-color: #e7ecf1;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 15px;
+  font-family: "Poppins", Arial;
+  color: white;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+.logo-container {
+  position: absolute;
+
+  background-color: var(--main-color);
+  margin-left: 1em;
+  z-index: 1;
+  height: 6em;
+  width: 6em;
+  padding: 0.5em;
+  display: flex;
+}
+.navbar {
+  display: flex;
+  background-color: #3d3935;
+  flex-wrap: wrap;
+  /* background-color: transparent; */
+  width: 100%;
+  /* gap: 2em; */
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure the navbar stays on top of other elements */
+}
+.navbar a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+.nav-start {
+  display: flex;
+  gap: 1em;
+  /* padding: 2em; */
+}
+
+.nav ul {
+  white-space: normal;
+  font-weight: 600;
+  padding: 2em;
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+.nav-end ul {
+  gap: 1em;
+  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  /* float: inline-end; */
+}
+.nav-end li {
+  list-style: none;
+  /* text-decoration: none; */
+}
+.nav li {
+  cursor: pointer;
+  list-style: none;
+}
+/* Hide the dropdown content by default */
+.dropdown-content {
+  display: none !important;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Show the dropdown menu on hover */
+.dropbtn li:hover .dropdown-content {
+  display: block !important;
+}
+
+/* Style dropdown links */
+.dropdown-content li {
+  color: black;
+  padding-bottom: 12px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  font-family: poppins;
+  font-weight: 100;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content li:hover {
+  background-color: #ddd;
+}
+
+.feather {
+  display: inline-block;
+  vertical-align: middle; /* This will vertically center the SVG with the text */
+}
+footer {
+  background-color: #3d3935; /* Changed to black color used in navbar */
+  color: white;
+  padding: 4em;
+  font-family: "Poppins", Arial;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4em;
+  /* gap: 2em; */
+}
+footer div {
+  display: flex;
+  justify-content: center;
+}
+.footer-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

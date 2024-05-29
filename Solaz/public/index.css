@@ -35,89 +35,7 @@ body {
   background-size: cover;
   background-position: center center;
 }
-.logo-container {
-  position: absolute;
 
-  background-color: var(--main-color);
-  margin-left: 1em;
-  z-index: 1;
-  height: 6em;
-  width: 6em;
-  padding: 0.5em;
-  display: flex;
-}
-.navbar {
-  display: flex;
-  background-color: #3d3935;
-  flex-wrap: wrap;
-  /* background-color: transparent; */
-  width: 100%;
-  /* gap: 2em; */
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 1000; /* Ensure the navbar stays on top of other elements */
-}
-.nav-start {
-  display: flex;
-  gap: 1em;
-  /* padding: 2em; */
-}
-
-.nav ul {
-  white-space: normal;
-  font-weight: 600;
-  padding: 2em;
-  display: flex;
-  gap: 2em;
-  flex-wrap: wrap;
-}
-.nav-end ul {
-  gap: 1em;
-  padding: 2em;
-  display: flex;
-  flex-wrap: wrap;
-  /* float: inline-end; */
-}
-.nav li {
-  cursor: pointer;
-  list-style: none;
-}
-/* Hide the dropdown content by default */
-.dropdown-content {
-  display: none !important;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Show the dropdown menu on hover */
-.dropbtn li:hover .dropdown-content {
-  display: block !important;
-}
-
-/* Style dropdown links */
-.dropdown-content li {
-  color: black;
-  padding-bottom: 12px;
-  text-decoration: none;
-  display: block;
-  font-size: 14px;
-  font-family: poppins;
-  font-weight: 100;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content li:hover {
-  background-color: #ddd;
-}
-
-.feather {
-  display: inline-block;
-  vertical-align: middle; /* This will vertically center the SVG with the text */
-}
 .top-middle {
   display: flex;
   flex-direction: column;
@@ -135,6 +53,7 @@ body {
   color: white;
   /* margin-top: 1em; */
   color: var(--main-color);
+  align-items: center;
 }
 .headlines-lower {
   display: flex;
@@ -212,12 +131,18 @@ body {
   font-weight: 600;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  color: var(--main-color);
+  color: var(--main-color) !important;
+}
+.section-1 h2 a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent element */
 }
 .room-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2em;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3em;
   margin-left: 1em;
   margin-right: 1em;
 }

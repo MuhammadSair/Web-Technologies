@@ -1,0 +1,85 @@
+:root {
+  --main-color: #b58a61;
+  --secondary-color: #9c9c9c;
+  --tertiary-color: #e7ecf1;
+  --background-color: #f7f0f0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 15px;
+  font-family: "Poppins", Arial;
+  color: white;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+.section-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://solaz.arrowtheme.com/wp-content/uploads/2016/11/bg-breadcrumd.jpg");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.section-1 h1 {
+  font-family: "Poppins";
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 67px;
+  text-transform: uppercase;
+}
+
+.room-list {
+  padding: 4em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+/* .room-card img {
+    height: auto;
+  } */
+.room-card-text h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #3d3935;
+  font-size: 22px;
+  color: #3d3935;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+.room-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.room-card-text span {
+  display: flex;
+  justify-content: center;
+  color: var(--secondary-color);
+}
+.room-card-text div {
+  color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+.room-card-outer {
+  background-color: white;
+}
+.room-card-text {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Employee</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <%- include(partials + 'navbar.ejs' ) %>
+        <div class="container" style="margin-top: 10rem; margin-left: 20rem;">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Employee Details</h1>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-3">Name:</dt>
+                        <dd class="col-sm-9">
+                            <%= employee.name %>
+                        </dd>
+
+                        <dt class="col-sm-3">Email:</dt>
+                        <dd class="col-sm-9">
+                            <%= employee.email %>
+                        </dd>
+
+                        <dt class="col-sm-3">Role:</dt>
+                        <dd class="col-sm-9">
+                            <%= employee.role %>
+                        </dd>
+
+                        <dt class="col-sm-3">Salary:</dt>
+                        <dd class="col-sm-9">
+                            <%= employee.salary %>
+                        </dd>
+
+                        <dt class="col-sm-3">Hired Date:</dt>
+                        <dd class="col-sm-9">
+                            <%= employee.hiredDate.toLocaleDateString() %>
+                        </dd>
+
+                        <dt class="col-sm-3">Department:</dt>
+                        <dd class="col-sm-9">
+                            <%= employee.department %>
+                        </dd>
+                    </dl>
+                    <hr>
+                    <h2>Attendance</h2>
+                    <dl class="row">
+                        <dt class="col-sm-3">Total Days:</dt>
+                        <dd class="col-sm-9">
+                            <%= attendance.totalDays %>
+                        </dd>
+
+                        <dt class="col-sm-3">Present Days:</dt>
+                        <dd class="col-sm-9">
+                            <%= attendance.presentDays %>
+                        </dd>
+
+                        <dt class="col-sm-3">Attendance Percentage:</dt>
+                        <dd class="col-sm-9">
+                            <%= attendance.percentage.toFixed(2) %>%
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <a href="/admin/list-employees" class="btn btn-secondary mt-4">Back</a>
+        </div>
+
+</body>
+
+</html>
