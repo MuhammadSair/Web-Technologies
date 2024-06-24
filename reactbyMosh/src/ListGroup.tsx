@@ -8,7 +8,7 @@ interface listGroupProp {
   onSelectItem: (item: string) => void;
 }
 
-function ListGroup({ persons, heading }: listGroupProp) {
+function ListGroup({ persons, heading, onSelectItem }: listGroupProp) {
   //   let persons = ["Zaid", "Muneeb", "Ali"];
   const [selectedPerson, setSelectedPerson] = useState(-1);
   // persons = [];
@@ -28,6 +28,7 @@ function ListGroup({ persons, heading }: listGroupProp) {
             key={person}
             onClick={() => {
               setSelectedPerson(index);
+              onSelectItem(person);
             }}
           >
             {person}
