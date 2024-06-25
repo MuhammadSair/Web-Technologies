@@ -46,3 +46,26 @@
 .plain-list {
   background-color: transparent;
 }
+.alert-primary {
+  position: relative;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  margin: 10px 0;
+  height: 30px;
+}
+.close-btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  line-height: 20px;
+}
+.primary {
+  background-color: #007bff;
+  border-radius: 10px;
+  height: 30px;
+  width: 10em;
+  cursor: pointer;
+}
