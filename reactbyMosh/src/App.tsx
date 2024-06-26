@@ -5,10 +5,12 @@ import "./App.css";
 import Alert from "./components/Alert";
 import ListGroup from "./ListGroup";
 import Button from "./components/Button";
+import Form from "./components/Form";
 
 function App() {
   let persons = ["Zaid", "Muneeb", "Ali"];
   const [alertVisibility, setAlertVisibility] = useState(false);
+
   const handleSelectedItem = (item: string) => {
     console.log(item);
   };
@@ -34,6 +36,7 @@ function App() {
           setAlertVisibility(true);
         }}
       ></Button>
+      <Form></Form>
     </>
   );
 }
