@@ -69,3 +69,6 @@
   width: 10em;
   cursor: pointer;
 }
+.danger {
+  color: red;
+}

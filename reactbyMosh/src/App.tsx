@@ -6,6 +6,9 @@ import Alert from "./components/Alert";
 import ListGroup from "./ListGroup";
 import Button from "./components/Button";
 import Form from "./components/Form";
+import FormUse from "./components/stateForm";
+import ReactForm from "./components/ReactForm";
+import ZodForm from "./components/ZodForm";
 
 function App() {
   let persons = ["Zaid", "Muneeb", "Ali"];
@@ -36,7 +39,10 @@ function App() {
           setAlertVisibility(true);
         }}
       ></Button>
-      <Form></Form>
+      {/* <Form></Form> */}
+      {/* <FormUse></FormUse> */}
+      {/* <ReactForm></ReactForm> */}
+      <ZodForm></ZodForm>
     </>
   );
 }
