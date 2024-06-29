@@ -9,14 +9,14 @@ interface Expense {
 interface props {
   expenses: Expense[];
 }
-const ExpenseList = () => {
+const ExpenseList = ({ expenses }: props) => {
   return (
     <div className="container">
       <table>
         <thead>
           <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
+            <th>Description</th>
+            <th>Amo</th>
             <th>Column 3</th>
             <th>Column 4</th>
             <th>Column 5</th>
@@ -24,35 +24,7 @@ const ExpenseList = () => {
         </thead>
         <tbody>
           <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 3</td>
-            <td>Cell 4</td>
-            <td>Cell 5</td>
-          </tr>
-          <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 3</td>
-            <td>Cell 4</td>
-            <td>Cell 5</td>
-          </tr>
-          <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 3</td>
-            <td>Cell 4</td>
-            <td>Cell 5</td>
-          </tr>
-          <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 3</td>
-            <td>Cell 4</td>
-            <td>Cell 5</td>
-          </tr>
-          <tr>
-            <td>Cell 1</td>
+            <td></td>
             <td>Cell 2</td>
             <td>Cell 3</td>
             <td>Cell 4</td>

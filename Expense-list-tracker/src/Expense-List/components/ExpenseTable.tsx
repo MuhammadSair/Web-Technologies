@@ -1,6 +1,15 @@
 import React from "react";
-
-const ExpenseTable = () => {
+interface Expense {
+  id: number;
+  description: string;
+  amount: number;
+  category: string;
+}
+interface props {
+  expenses: Expense[];
+  onDelete: (id: number) => void;
+}
+const ExpenseTable = ({ expenses, onDelete }: props) => {
   return (
     <div className="container">
       <table>
@@ -13,37 +22,30 @@ const ExpenseTable = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 3</td>
-            <td>Cell 4</td>
-          </tr>
-          <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 3</td>
-            <td>Cell 4</td>
-          </tr>
-          <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 3</td>
-            <td>Cell 4</td>
-          </tr>
-          <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 3</td>
-            <td>Cell 4</td>
-          </tr>
-          <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 3</td>
-            <td>Cell 4</td>
-          </tr>
+          {expenses.map((expense) => (
+            <tr key={expense.id}>
+              <td>{expense.description}</td>
+              <td>{expense.amount}</td>
+              <td>{expense.category}</td>
+              <td>
+                <button onClick={() => onDelete(expense.id)}>Delete </button>
+              </td>
+            </tr>
+          ))}
         </tbody>
+        <tfoot>
+          <tr>
+            <td>Total</td>
+            <td>
+              $
+              {expenses
+                .reduce((acc, expense) => {
+                  return expense.amount + acc;
+                }, 0)
+                .toFixed(2)}
+            </td>
+          </tr>
+        </tfoot>
       </table>
     </div>
   );
