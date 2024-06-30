@@ -59,8 +59,7 @@ const ExpenseForm = () => {
         <label htmlFor="category" className="input-control">
           Category
         </label>
-        <select {...register("categories")} name="category" id="">
-          <option value=""></option>
+        <select {...register("categories")} name="categories" id="">
           {categories.map((category) => (
             <option key={category} value={category}>
               {category}
