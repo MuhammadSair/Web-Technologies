@@ -17,10 +17,10 @@ body {
 }
 
 .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
 }
 
 table {
@@ -68,4 +68,45 @@ tbody {
       }
     }
   }
+}
+/* CSS for ExpenseForm */
+.Form {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-control {
+  margin-bottom: 20px; /* Ensures each field is exactly below the previous one */
+}
+
+.input-control label {
+  display: block; /* Makes labels left-aligned */
+  margin-bottom: 5px; /* Space between label and input */
+}
+
+.input-control input[type="text"],
+.Form select {
+  width: 100%; /* Increases the text field width to fill the container */
+  max-width: 400px; /* Optional: Limits the maximum width */
+  padding: 8px; /* Adds some padding inside the text fields for better readability */
+}
+
+.submit {
+  align-self: center; /* Centers the submit button */
+}
+.danger {
+  color: red;
+}
+.section-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+}
+.section-1-right {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
 }
