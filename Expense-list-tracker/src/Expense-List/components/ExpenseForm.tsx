@@ -5,19 +5,22 @@ import categories from "../categories";
 
 // import { categories } from "../../App";
 
+interface prop {
+  onSubmit: (data: expenseFormData) => void;
+}
 const schema = z.object({
   description: z
     .string()
     .min(3, { message: "Description should be atleast 3 characters" })
     .max(50),
   amount: z.number({ message: "Amount is required" }).min(0.001).max(100000),
-  categories: z.enum(categories, {
+  category: z.enum(categories, {
     errorMap: () => ({ message: "Category is required" }),
   }),
 });
 
 type expenseFormData = z.infer<typeof schema>;
-const ExpenseForm = () => {
+const ExpenseForm = ({ onSubmit }: prop) => {
   const {
     register,
     handleSubmit,
@@ -25,10 +28,7 @@ const ExpenseForm = () => {
   } = reactFormHook<expenseFormData>({
     resolver: zodResolver(schema), // Pass the schema to zodResolver
   });
-  const onSubmit = (data: FieldValues) => {
-    console.log(errors);
-    console.log(data);
-  };
+
   return (
     <form id="form" action="/" onSubmit={handleSubmit(onSubmit)}>
       <div className="Form">
@@ -59,16 +59,14 @@ const ExpenseForm = () => {
         <label htmlFor="category" className="input-control">
           Category
         </label>
-        <select {...register("categories")} name="categories" id="">
+        <select {...register("category")} name="category" id="">
           {categories.map((category) => (
             <option key={category} value={category}>
               {category}
             </option>
           ))}
         </select>
-        {errors.categories && (
-          <p className="danger">{errors.categories.message}</p>
-        )}
+        {errors.category && <p className="danger">{errors.category.message}</p>}
         <button type="submit" className="submit">
           Submit
         </button>

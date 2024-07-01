@@ -4,6 +4,7 @@ import ExpenseTable from "./Expense-List/components/ExpenseTable";
 import ExpenseCategories from "./Expense-List/components/ExpenseCategories";
 import ExpenseForm from "./Expense-List/components/ExpenseForm";
 import categories from "./Expense-List/categories";
+import { date } from "zod";
 function App() {
   const [expenses, setExpenseList] = useState([
     { id: 1, description: "adva", amount: 50, category: "Utilities" },
@@ -20,7 +21,14 @@ function App() {
     <>
       <div className="section-1">
         <div className="section-1-left">
-          <ExpenseForm></ExpenseForm>
+          <ExpenseForm
+            onSubmit={(newExpense) =>
+              setExpenseList([
+                ...expenses,
+                { ...newExpense, id: expenses.length + 1 },
+              ])
+            }
+          ></ExpenseForm>
         </div>
         <div className="section-1-right">
           <ExpenseCategories
