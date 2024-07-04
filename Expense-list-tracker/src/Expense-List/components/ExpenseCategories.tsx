@@ -11,6 +11,7 @@ const ExpenseCategories = ({ selectCategories }: props) => {
       id=""
       onChange={(event) => selectCategories(event.target.value)}
     >
+      <option value="">All categories</option>
       {categories.map((category) => (
         <option value={category}>{category}</option>
       ))}

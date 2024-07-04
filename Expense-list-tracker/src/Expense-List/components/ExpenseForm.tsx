@@ -4,7 +4,6 @@ import { z } from "zod";
 import categories from "../categories";
 
 // import { categories } from "../../App";
-
 interface prop {
   onSubmit: (data: expenseFormData) => void;
 }
@@ -28,7 +27,6 @@ const ExpenseForm = ({ onSubmit }: prop) => {
   } = reactFormHook<expenseFormData>({
     resolver: zodResolver(schema), // Pass the schema to zodResolver
   });
-
   return (
     <form id="form" action="/" onSubmit={handleSubmit(onSubmit)}>
       <div className="Form">
@@ -59,7 +57,8 @@ const ExpenseForm = ({ onSubmit }: prop) => {
         <label htmlFor="category" className="input-control">
           Category
         </label>
-        <select {...register("category")} name="category" id="">
+        <select {...register("category")} name="categories" id="">
+          <option value=""></option>
           {categories.map((category) => (
             <option key={category} value={category}>
               {category}
